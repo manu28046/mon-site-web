@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+
+		<title>-à propos-</title> 
+		<link rel="stylesheet" media="screen" href="style-àpropos.css" >
+		<meta charset="UTF-8">
+		<meta name="author" content="Manuel Ferreira" >
+	    </head>
+
+
+		<body>
+		<header>
+			<img src="images/logo.png" alt="logo">
+			<a href="index.html">Accueil</a>
+			<a href="#menu">Menu</a>
+			<a href="galerie.html">Galerie</a>
+			<a href="localisation.html">Localisation</a>
+			<a href="àpropos.html">à propos</a>
+		</header>
+
+
+		    <div class="àpropos" id="àpropos">
+			    <h1>En savoir plus sur nous ?</h1>
+		    </div>
+		
+
+	
+	        <div class="text" id="text">
+				<p>Notre camion se déplace aux 4 coins de l'Eure pour servir de délicieux burgers, bagels et salades. Nous sommes 2 amis passionnés par la cuisine de rue. En 2017, nous avons créé notre propre food truck afin de pouvoir partager notre passion avec le plus grand nombre. Nous cuisinons exclusivement avec des produits locaux dans la mesure du possible, afin de soutenir les petits producteurs de notre région. Lors de votre prochaine halte dans notre food truck, prenez le temps de rencontrer notre équipe derrière. Chaque burger, bagels et salade a une histoire passionnante à découvrir. Venez la découvrir avec nous, une bouchée à la fois.</p>
+			  </div>
+
+			
+			  <button onclick="setLanguage('fr')">
+				<img src="images/drapeau-france.webp" alt="Français">
+				Français
+			  </button>
+			  
+			  <button onclick="setLanguage('en')">
+				<img src="images/drapeau-anglais.png" alt="English">
+				English
+			  </button>
+			  
+			  <button onclick="setLanguage('pr')">
+				<img src="images/drapeau-portugal.webp" alt="Português">
+				Português
+			  </button>
+			  
+		
+			<script>
+				function setLanguage(lang) {
+					const texts = {
+						fr: "Notre camion se déplace aux 4 coins de l'Eure pour servir de délicieux burgers, bagels et salades. Nous sommes 2 amis passionnés par la cuisine de rue. En 2017, nous avons créé notre propre food truck afin de pouvoir partager notre passion avec le plus grand nombre. Nous cuisinons exclusivement avec des produits locaux dans la mesure du possible, afin de soutenir les petits producteurs de notre région. Lors de votre prochaine halte dans notre food truck, prenez le temps de rencontrer notre équipe, derrière chaque burger, bagels et salade a une histoire passionnante à découvrir. Venez la découvrir avec nous, une bouchée à la fois.",
+						en: "Our truck travels to the 4 corners of the Eure to service delicious burgers, bagels and salads. We are 2 friends with a passion for street food. In 2017, we set up our own food truck so that we could share our passion with as many people as possible. We cook exclusively with local products wherever possible, to support the small producers in our region. When you next stop off at our food truck, take the time to meet our team behind. Every burger, bagels and salad, there is a fascinating story to discover. Come and experience it with us, one bite at a time.",
+						pr: "O nosso camião viaja para os 4 cantos do Eure para servir deliciosos hambúrgueres, bagels e saladas. Somos dois amigos apaixonados por comida de rua. Em 2017, criámos o nosso próprio food truck para podermos partilhar a nossa paixão com o maior número de pessoas possível. Cozinhamos exclusivamente com produtos locais sempre que possível, para apoiar os pequenos produtores da nossa região. Na sua próxima paragem no nosso food truck, aproveite para conhecer a nossa equipa. Em cada hambúrguer, bagels e salada, há uma história fascinante para descobrir. Venha vivê-la connosco, uma dentada de cada vez.",
+					}
+					document.getElementById('text').innerText = texts[lang];
+				}
+			</script>
+
+             <footer>
+	
+	             <h2>🍔 Burg'Eure Truck</h2>
+  
+
+	             <nav>
+	                <a href="#menu">Menu</a> |
+	                <a href="localisation.html">Où nous trouver</a> |
+	                <a href="àpropos.html">En savoir plus sur nous</a>
+  	             </nav>
+  
+	
+	            <p>
+	               📞 <a href="tel:+330616828689">+33 06 16 82 86 89</a> 
+	             | 📧 <a href="mailto:contact@burg'euretruck.com">contact@burg'euretruck.com</a>
+	             </p>
+  
+
+	            <p class="social-icons">
+	                  <a href="https://www.facebook.com/burgeuretruck/?locale=fr_FR">📘</a>
+	                  <a href="https://www.instagram.com/burg_eure_truck/?hl=am-et">📸</a>
+	                  <a href="https://burgeuretruck.fr/">💻</a>
+	            </p>
+  
+	
+	             <p class="droit">
+	                 © 2024 Burg'eure Truck - Manuel Ferreira
+	            </p>
+
+
+            </footer>
+
+
+</body>
+</html> 
